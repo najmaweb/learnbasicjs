@@ -1,0 +1,7 @@
+Tugas:
+1. tambahkan tombol '00', dibawah backspace, disamping tombol 9. Jika tombol '00' di klik maka
+akan menambahkan 00 di textbar, di bagian belakang angka yang ada
+2. ubah urutan tombol sebagai berikut:
+  1 4 7
+  2 5 8
+  3 6 9
