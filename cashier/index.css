@@ -1,0 +1,8 @@
+#controlPanel{
+    position: absolute;
+    right: 100;
+    top: 100;
+}
+#btnAddProduct{
+    cursor: pointer;
+}
