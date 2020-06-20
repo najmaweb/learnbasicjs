@@ -7,6 +7,9 @@
     products.forEach(product => {
         $('#masterProduct').append('<option value='+product.value+'>'+product.name+'</option>');
     });
+    possibleAmount.forEach(amount=>{
+        $('#txtAmount').append('<option value='+amount+'>'+amount+'</option>');
+    })
     $('#mainscreen tbody').on('click','td.btnRemove',function(productval){
         product = $(this).parent();
         amount = product.find('.amount').html();

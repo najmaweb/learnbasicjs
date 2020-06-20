@@ -11,6 +11,9 @@ products = [
     {name:'Kwaci Bunga Matahari',price:15000,value:9},
     {name:'Samyang Green',price:5500,value:10},
 ]
+possibleAmount = [
+    1,2,3,4,5,6
+]
 getProduct = function(productval){
     product = products[productval];
     cnt = $('#mainscreen tbody tr').length;

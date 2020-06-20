@@ -1,8 +1,11 @@
 #controlPanel{
     position: absolute;
     right: 100;
-    top: 100;
+    top: 30;
 }
 #btnAddProduct{
     cursor: pointer;
+}
+#mainscreen{
+    width: 100%;
 }
