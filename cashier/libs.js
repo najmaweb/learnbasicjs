@@ -14,6 +14,13 @@ products = [
 getProduct = function(productval){
     product = products[productval];
     cnt = $('#mainscreen tbody tr').length;
-    out = '<tr><td>'+cnt+'.</td><td>'+product.name+'</td><td>'+$('#txtAmount').val()+'</td><td>'+(product.price).toLocaleString()+'</td><td>'+(parseInt($('#txtAmount').val())*parseInt(product.price)).toLocaleString()+'</td><td class="btnRemove">X</td></tr>'
+    out = '<tr><td>'+cnt+'.</td><td>'+product.name+'</td><td class="amount">'+$('#txtAmount').val()+'</td><td class="price">'+(product.price).toLocaleString()+'</td><td>'+(parseInt($('#txtAmount').val())*parseInt(product.price)).toLocaleString()+'</td><td class="btnRemove">X</td></tr>'
+    $('#total').html((parseInt($('#total').html().replace(',',''))+parseInt($('#txtAmount').val())*parseInt(product.price)).toLocaleString());
     return out;
+}
+countTotal = function(){
+    $('#mainscreen tbody tr').each(function(a,b){
+        console.log('Bb',b);
+    })
+    $('#total').html()
 }
